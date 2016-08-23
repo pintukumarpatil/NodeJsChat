@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="40dp" >
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/balloon_incoming_normal"
+        android:gravity="bottom"
+        android:paddingTop="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Text goes here"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:typeface="sans"/>
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Text goes here"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:typeface="sans"/>
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_item"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:text="Date"
+            android:textColor="#343434"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</RelativeLayout>

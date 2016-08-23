@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="@dimen/d5"
+    android:orientation="horizontal"
+    >
+    <com.chat.pk.View.ImageViewCircular
+    android:layout_gravity="center"
+    android:id="@+id/iv_image"
+    android:layout_width="@dimen/d60"
+    android:layout_height="@dimen/d60"
+    android:src="@drawable/avatar_group_tmp"
+    />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/d5"
+        android:layout_above="@+id/v_bottom">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/tv_time"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/dim_foreground_light"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="zx"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/dim_foreground_light_disabled"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d5">
+            <TextView
+                android:id="@+id/tv_messages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:layout_toLeftOf="@+id/tv_wadges"
+                android:singleLine="true"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/dim_foreground_light_disabled"
+                style="@style/TextAppearance.AppCompat.Small"/>
+            <TextView
+                android:id="@+id/tv_wadges"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:minHeight="@dimen/d15"
+                android:minWidth="@dimen/d15"
+                android:text="1"
+                android:gravity="center"
+                android:background="@drawable/circle_icon_app_pink"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:layout_alignParentRight="true"
+                style="@style/TextAppearance.AppCompat.Small"/>
+        </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:id="@+id/v_bottom"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@color/dim_foreground_light_inverse_disabled"
+            android:layout_height="1px"/>
+    </RelativeLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+

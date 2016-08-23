@@ -1,0 +1,20 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/load_earlier"
+        android:orientation="vertical"
+        android:padding="@dimen/d5">
+
+    <TextView
+            android:id="@+id/tv_msg"
+            style="?android:textAppearanceSmall"
+            android:textColor="?android:textColorSecondaryInverse"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/d5"
+            android:text="@string/load_earlier_messages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>
